@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css"> <!-- importação de icones no font awesome -->
+    <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>Cadastro Dados Covid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="area">
+            <header>
+                <h1>Cadastro de dados COVID-19 de Florianópolis</h1>
+                <p>Preencha o cadastro abaixo com os dados de pacientes que realizaram o teste de COVID-19 em Florianópolis</p>
+            </header>
+            <div class="steps">
+                <aside>
+                    <div class="sidebar">
+                        <div class="sidebarItem" ><a href="/index.html">
+                            <div class="info">
+                                <div class="titulo">Home</div>
+                                <div class="descricao">App COVID-19</div>
+                            </div>
+                            <div class="icone"><img src="/image/home-branco.png" /></div>
+                            <div class="ponto"></div>
+                        </a>   
+                        </div>
+                        <div class="sidebarItem" ><a href="/pages/cadastrar.html">
+                            <div class="info">
+                                <div class="titulo">Cadastrar</div>
+                                <div class="descricao">Realizar cadastro para triagem de paciante.</div>
+                            </div>
+                            <div class="icone"><img src="/image/cadastrar.png" /></div>
+                            <div class="ponto"></div>
+                        </a>   
+                        </div>
+                        <div class="sidebarItem" ><a href="/pages/pesquisar.html">
+                            <div class="info">
+                                <div class="titulo">Pesquisar</div>
+                                <div class="descricao">Realizar pesquisa dos dados do paciante.</div>
+                            </div>
+                            <div class="icone"><img src="/image/pesquisar.png" /></div>
+                            <div class="ponto"></div>
+                        </a>   
+                        </div>
+                        <div class="sidebarItem" ><a href="/pages/upload.html">
+                            <div class="info">
+                                <div class="titulo">Upload</div>
+                                <div class="descricao">Realizar o upload de arquivo em csv.</div>
+                            </div>
+                            <div class="icone"><img src="/image/upload-fundo.png"/></div>
+                            <div class="ponto"></div>
+                        </a>   
+                        </div>
+                    </div>
+                </aside>
+                <main>
+                    <h1>Cadastro de paciente</h1>
+                    <p>Preencha os campos abaixo com os dados do paciente:</p>
+
+                    <hr>
+
+                    <form action="">
+
+                       <label>Data de nascimento:</label>
+                       <div class="input">
+                            <input type="date" name="dtnasc" id="dtnasc" class="inputdt" required/>
+                       </div>    
+                       <label>Data da notificação:</label>
+                       <div class="input">
+                            <input type="date" name="dtnot" id="dtnot" class="inputdt" required/>
+                       </div>
+                       <label>Data do teste:</label>
+                       <div class="input">
+                            <input type="date" name="dttest" id="dttest" class="inputdt" required/>
+                       </div>
+                       <label>Data do óbito:</label>
+                       <div class="input">
+                            <input type="date" name="dtobit" id="dtobit" class="inputdt" />
+                       </div>
+                       <label>Data primeiros sintomas:</label>
+                       <div class="input">
+                            <input type="date" name="dtsint" id="dtsint" class="inputdt" required/>
+                       </div>     
+
+                       <label for="">Faixa etária: </label>
+                       <div class="input"> 
+                           <input type="radio" id="0" name="1" value="0 a 9 anos" requi/>
+                           <label for="0">0 a 9 anos</label><br>
+                           <input type="radio" id="1" name="1" value="10 a 19 anos" requi/>
+                           <label for="1">10 a 19 anos</label><br>
+                           <input type="radio" id="2" name="1" value="20 a 29 anos" requi/>
+                           <label for="2">20 a 29 anos</label><br>
+                           <input type="radio" id="3" name="1" value="30 a 39 anos" requi/>
+                           <label for="3">30 a 39 anos</label><br>
+                           <input type="radio" id="4" name="1" value="40 a 49 anos" requi/>
+                           <label for="4">40 a 49 anos</label><br>
+                           <input type="radio" id="5" name="1" value="50 a 59 anos" requi/>
+                           <label for="5">50 a 59 anos</label><br>
+                           <input type="radio" id="6" name="1" value="60 a 69 anos" requi/>
+                           <label for="6">60 a 69 anos</label><br>
+                           <input type="radio" id="7" name="1" value="70 a 79 anos" requi/>
+                           <label for="7">70 a 79 anos</label><br>
+                           <input type="radio" id="8" name="1" value="80 a 89 anos" requi/>
+                           <label for="8">80 a 89 anos</label><br>
+                           <input type="radio" id="9" name="1" value="90 anos ou mais" requi/>
+                           <label for="9">90 anos ou mais</label><br>
+                       </div>
+
+                    
+                    <label for="">Sexo: </label>
+                    <div class="input"> 
+                        <input type="radio" id="feminino" name="genero" value="feminino" requi/>
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino" requi/>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="outro" name="genero" value="outro" requi/>
+                        <label for="outro">Outro</label>
+                    </div>
+             
+                    <label for="">Cor: </label>
+                    <div class="input"> 
+                        <input type="radio" id="amarela" name="cor" value="amarela" requi/>
+                        <label for="amarela">Amarela</label>
+                        <input type="radio" id="branca" name="cor" value="branca" requi/>
+                        <label for="branca">Branca</label>
+                        <input type="radio" id="indigena" name="cor" value="indigena" requi/>
+                        <label for="indigena">Indígena</label>
+                        <input type="radio" id="naoinformada" name="cor" value="naoinformada" requi/>
+                        <label for="naoinformada">Não Informada</label>
+                        <input type="radio" id="parda" name="cor" value="parda" requi/>
+                        <label for="parda">Parda</label>
+                        <input type="radio" id="preta" name="cor" value="preta" requi/>
+                        <label for="preta">Preta</label>
+                    </div>  
+
+                    <label for="cidades">Cidade:</label>
+                    <div class="input">                 
+                        <input list="cidades" />
+                        <datalist id="cidades">
+                                <option value=" Abdon Batista" >
+                                <option value=" Abelardo Luz" >
+                                <option value=" Agrolândia" >
+                                <option value=" Agronômica" >
+                                <option value=" Água Doce" >
+                                <option value=" Águas de Chapecó" >
+                                <option value=" Águas Frias" >
+                                <option value=" Águas Mornas" >
+                                <option value=" Alfredo Wagner" >
+                                <option value=" Alto Bela Vista" >
+                                <option value=" Anchieta" >
+                                <option value=" Angelina" >
+                                <option value=" Anita Garibaldi" >
+                                <option value=" Anitápolis" >
+                                <option value=" Antônio Carlos" >
+                                <option value=" Apiúna" >
+                                <option value=" Arabutã" >
+                                <option value=" Araquari" >
+                                <option value=" Araranguá" >
+                                <option value=" Armazém" >
+                                <option value=" Arroio Trinta" >
+                                <option value=" Arvoredo" >
+                                <option value=" Ascurra" >
+                                <option value=" Atalanta" >
+                                <option value=" Aurora" >
+                                <option value=" Balneário Arroio do Silva" >
+                                <option value=" Balneário Barra do Sul" >
+                                <option value=" Balneário Camboriú" >
+                                <option value=" Balneário Gaivota" >
+                                <option value=" Balneário Piçarras" >
+                                <option value=" Balneário Rincão" >
+                                <option value=" Bandeirante" >
+                                <option value=" Barra Bonita" >
+                                <option value=" Barra Velha" >
+                                <option value=" Bela Vista do Toldo" >
+                                <option value=" Belmonte" >
+                                <option value=" Benedito Novo" >
+                                <option value=" Biguaçu" >
+                                <option value=" Blumenau" >
+                                <option value=" Bocaina do Sul" >
+                                <option value=" Bom Jardim da Serra" >
+                                <option value=" Bom Jesus" >
+                                <option value=" Bom Jesus do Oeste" >
+                                <option value=" Bom Retiro" >
+                                <option value=" Bombinhas" >
+                                <option value=" Botuverá" >
+                                <option value=" Braço do Norte" >
+                                <option value=" Braço do Trombudo" >
+                                <option value=" Brunópolis" >
+                                <option value=" Brusque" >
+                                <option value=" Caçador" >
+                                <option value=" Caibi" >
+                                <option value=" Calmon" >
+                                <option value=" Camboriú" >
+                                <option value=" Campo Alegre" >
+                                <option value=" Campo Belo do Sul" >
+                                <option value=" Campo Erê" >
+                                <option value=" Campos Novos" >
+                                <option value=" Canelinha" >
+                                <option value=" Canoinhas" >
+                                <option value=" Capão Alto" >
+                                <option value=" Capinzal" >
+                                <option value=" Capivari de Baixo" >
+                                <option value=" Catanduvas" >
+                                <option value=" Caxambu do Sul" >
+                                <option value=" Celso Ramos" >
+                                <option value=" Cerro Negro" >
+                                <option value=" Chapadão do Lageado" >
+                                <option value=" Chapecó" >
+                                <option value=" Cocal do Sul" >
+                                <option value=" Concórdia" >
+                                <option value=" Cordilheira Alta" >
+                                <option value=" Coronel Freitas" >
+                                <option value=" Coronel Martins" >
+                                <option value=" Correia Pinto" >
+                                <option value=" Corupá" >
+                                <option value=" Criciúma" >
+                                <option value=" Cunha Porã" >
+                                <option value=" Cunhataí" >
+                                <option value=" Curitibanos" >
+                                <option value=" Descanso" >
+                                <option value=" Dionísio Cerqueira" >
+                                <option value=" Dona Emma" >
+                                <option value=" Doutor Pedrinho" >
+                                <option value=" Entre Rios" >
+                                <option value=" Ermo" >
+                                <option value=" Erval Velho" >
+                                <option value=" Faxinal dos Guedes" >
+                                <option value=" Flor do Sertão" >
+                                <option value=" Florianópolis (Capital)" >
+                                <option value=" Formosa do Sul" >
+                                <option value=" Forquilhinha" >
+                                <option value=" Fraiburgo" >
+                                <option value=" Frei Rogério" >
+                                <option value=" Galvão" >
+                                <option value=" Garopaba" >
+                                <option value=" Garuva" >
+                                <option value=" Gaspar" >
+                                <option value=" Governador Celso Ramos" >
+                                <option value=" Grão Pará" >
+                                <option value=" Gravatal" >
+                                <option value=" Guabiruba" >
+                                <option value=" Guaraciaba" >
+                                <option value=" Guaramirim" >
+                                <option value=" Guarujá do Sul" >
+                                <option value=" Guatambu" >
+                                <option value=" Herval d'Oeste" >
+                                <option value=" Ibiam" >
+                                <option value=" Ibicaré" >
+                                <option value=" Ibirama" >
+                                <option value=" Içara" >
+                                <option value=" Ilhota" >
+                                <option value=" Imaruí" >
+                                <option value=" Imbituba" >
+                                <option value=" Imbuia" >
+                                <option value=" Indaial" >
+                                <option value=" Iomerê" >
+                                <option value=" Ipira" >
+                                <option value=" Iporã do Oeste" >
+                                <option value=" Ipuaçu" >
+                                <option value=" Ipumirim" >
+                                <option value=" Iraceminha" >
+                                <option value=" Irani" >
+                                <option value=" Irati" >
+                                <option value=" Irineópolis" >
+                                <option value=" Itá" >
+                                <option value=" Itaiópolis" >
+                                <option value=" Itajaí" >
+                                <option value=" Itapema" >
+                                <option value=" Itapiranga" >
+                                <option value=" Itapoá" >
+                                <option value=" Ituporanga" >
+                                <option value=" Jaborá" >
+                                <option value=" Jacinto Machado" >
+                                <option value=" Jaguaruna" >
+                                <option value=" Jaraguá do Sul" >
+                                <option value=" Jardinópolis" >
+                                <option value=" Joaçaba" >
+                                <option value=" Joinville" >
+                                <option value=" José Boiteux" >
+                                <option value=" Jupiá" >
+                                <option value=" Lacerdópolis" >
+                                <option value=" Lages" >
+                                <option value=" Laguna" >
+                                <option value=" Lajeado Grande" >
+                                <option value=" Laurentino" >
+                                <option value=" Lauro Müller" >
+                                <option value=" Lebon Régis" >
+                                <option value=" Leoberto Leal" >
+                                <option value=" Lindóia do Sul" >
+                                <option value=" Lontras" >
+                                <option value=" Luiz Alves" >
+                                <option value=" Luzerna" >
+                                <option value=" Macieira" >
+                                <option value=" Mafra" >
+                                <option value=" Major Gercino" >
+                                <option value=" Major Vieira" >
+                                <option value=" Maracajá" >
+                                <option value=" Maravilha" >
+                                <option value=" Marema" >
+                                <option value=" Massaranduba" >
+                                <option value=" Matos Costa" >
+                                <option value=" Meleiro" >
+                                <option value=" Mirim Doce" >
+                                <option value=" Modelo" >
+                                <option value=" Mondaí" >
+                                <option value=" Monte Carlo" >
+                                <option value=" Monte Castelo" >
+                                <option value=" Morro da Fumaça" >
+                                <option value=" Morro Grande" >
+                                <option value=" Navegantes" >
+                                <option value=" Nova Erechim" >
+                                <option value=" Nova Itaberaba" >
+                                <option value=" Nova Trento" >
+                                <option value=" Nova Veneza" >
+                                <option value=" Novo Horizonte" >
+                                <option value=" Orleans" >
+                                <option value=" Otacílio Costa" >
+                                <option value=" Ouro" >
+                                <option value=" Ouro Verde" >
+                                <option value=" Paial" >
+                                <option value=" Painel" >
+                                <option value=" Palhoça" >
+                                <option value=" Palma Sola" >
+                                <option value=" Palmeira" >
+                                <option value=" Palmitos" >
+                                <option value=" Papanduva" >
+                                <option value=" Paraíso" >
+                                <option value=" Passo de Torres" >
+                                <option value=" Passos Maia" >
+                                <option value=" Paulo Lopes" >
+                                <option value=" Pedras Grandes" >
+                                <option value=" Penha" >
+                                <option value=" Peritiba" >
+                                <option value=" Pescaria Brava" >
+                                <option value=" Petrolândia" >
+                                <option value=" Pinhalzinho" >
+                                <option value=" Pinheiro Preto" >
+                                <option value=" Piratuba" >
+                                <option value=" Planalto Alegre" >
+                                <option value=" Pomerode" >
+                                <option value=" Ponte Alta" >
+                                <option value=" Ponte Alta do Norte" >
+                                <option value=" Ponte Serrada" >
+                                <option value=" Porto Belo" >
+                                <option value=" Porto União" >
+                                <option value=" Pouso Redondo" >
+                                <option value=" Praia Grande" >
+                                <option value=" Presidente Castelo Branco" >
+                                <option value=" Presidente Getúlio" >
+                                <option value=" Presidente Nereu" >
+                                <option value=" Princesa" >
+                                <option value=" Quilombo" >
+                                <option value=" Rancho Queimado" >
+                                <option value=" Rio das Antas" >
+                                <option value=" Rio do Campo" >
+                                <option value=" Rio do Oeste" >
+                                <option value=" Rio do Sul" >
+                                <option value=" Rio dos Cedros" >
+                                <option value=" Rio Fortuna" >
+                                <option value=" Rio Negrinho" >
+                                <option value=" Rio Rufino" >
+                                <option value=" Riqueza" >
+                                <option value=" Rodeio" >
+                                <option value=" Romelândia" >
+                                <option value=" Salete" >
+                                <option value=" Saltinho" >
+                                <option value=" Salto Veloso" >
+                                <option value=" Sangão" >
+                                <option value=" Santa Cecília" >
+                                <option value=" Santa Helena" >
+                                <option value=" Santa Rosa de Lima" >
+                                <option value=" Santa Rosa do Sul" >
+                                <option value=" Santa Terezinha" >
+                                <option value=" Santa Terezinha do Progresso" >
+                                <option value=" Santiago do Sul" >
+                                <option value=" Santo Amaro da Imperatriz" >
+                                <option value=" São Bento do Sul" >
+                                <option value=" São Bernardino" >
+                                <option value=" São Bonifácio" >
+                                <option value=" São Carlos" >
+                                <option value=" São Cristóvão do Sul" >
+                                <option value=" São Domingos" >
+                                <option value=" São Francisco do Sul" >
+                                <option value=" São João Batista" >
+                                <option value=" São João do Itaperiú" >
+                                <option value=" São João do Oeste" >
+                                <option value=" São João do Sul" >
+                                <option value=" São Joaquim" >
+                                <option value=" São José" >
+                                <option value=" São José do Cedro" >
+                                <option value=" São José do Cerrito" >
+                                <option value=" São Lourenço do Oeste" >
+                                <option value=" São Ludgero" >
+                                <option value=" São Martinho" >
+                                <option value=" São Miguel da Boa Vista" >
+                                <option value=" São Miguel do Oeste" >
+                                <option value=" São Pedro de Alcântara" >
+                                <option value=" Saudades" >
+                                <option value=" Schroeder" >
+                                <option value=" Seara" >
+                                <option value=" Serra Alta" >
+                                <option value=" Siderópolis" >
+                                <option value=" Sombrio" >
+                                <option value=" Sul Brasil" >
+                                <option value=" Taió" >
+                                <option value=" Tangará" >
+                                <option value=" Tigrinhos" >
+                                <option value=" Tijucas" >
+                                <option value=" Timbé do Sul" >
+                                <option value=" Timbó" >
+                                <option value=" Timbó Grande" >
+                                <option value=" Três Barras" >
+                                <option value=" Treviso" >
+                                <option value=" Treze de Maio" >
+                                <option value=" Treze Tílias" >
+                                <option value=" Trombudo Central" >
+                                <option value=" Tubarão" >
+                                <option value=" Tunápolis" >
+                                <option value=" Turvo" >
+                                <option value=" União do Oeste" >
+                                <option value=" Urubici" >
+                                <option value=" Urupema" >
+                                <option value=" Urussanga" >
+                                <option value=" Vargeão" >
+                                <option value=" Vargem" >
+                                <option value=" Vargem Bonita" >
+                                <option value=" Vidal Ramos" >
+                                <option value=" Videira" >
+                                <option value=" Vitor Meireles" >
+                                <option value=" Witmarsum" >
+                                <option value=" Xanxerê" >
+                                <option value=" Xavantina" >
+                                <option value=" Xaxim" >
+                                <option value=" Zortéa" >
+                        </datalist>
+                    </div>
+                    
+                    <label for="bairros">Bairro:</label>
+                    <div class="input">                 
+                        <input list="bairros" />
+                        <datalist id="bairros">
+                                <option value=" Centro" >
+                                <option value=" Capoeiras" >
+                                <option value=" Trindade" >
+                                <option value=" Agronômica" >
+                                <option value=" Saco dos Limões" >
+                                <option value=" Coqueiros" >
+                                <option value=" Monte Cristo" >
+                                <option value=" Jardim Atlântico" >
+                                <option value=" Itacorubi" >
+                                <option value=" Costeira do Pirajubaé" >
+                                <option value=" Capivari" >
+                                <option value=" Tapera da Base" >
+                                <option value=" Estreito" >
+                                <option value=" Monte Verde" >
+                                <option value=" Balneário" >
+                                <option value=" São João do Rio Vermelho" >
+                                <option value=" Canto" >
+                                <option value=" Abraão" >
+                                <option value=" Santa Mônica" >
+                                <option value=" Lagoa" >
+                                <option value=" Saco Grande" >
+                                <option value=" Córrego Grande" >
+                                <option value=" Canasvieiras" >
+                                <option value=" Pantanal" >
+                                <option value=" Coloninha" >
+                                <option value=" Barra da Lagoa" >
+                                <option value=" Carianos" >
+                                <option value=" José Mendes" >
+                                <option value=" Ingleses Centro" >
+                                <option value=" João Paulo" >
+                                <option value=" Campeche Leste" >
+                                <option value=" Campeche Sul" >
+                                <option value=" Rio Tavares Central" >
+                                <option value=" Santinho" >
+                                <option value=" Ponta das Canas" >
+                                <option value=" Vargem do Bom Jesus" >
+                                <option value=" Armação" >
+                                <option value=" Cachoeira do Bom Jesus Leste" >
+                                <option value=" Pântano do Sul" >
+                                <option value=" Itaguaçu" >
+                                <option value=" Jurere Leste" >
+                                <option value=" Campeche Norte" >
+                                <option value=" Vargem Grande" >
+                                <option value=" Campeche Central" >
+                                <option value=" Ressacada" >
+                                <option value=" Morro das Pedras" >
+                                <option value=" Alto Ribeirão Leste" >
+                                <option value=" Alto Ribeirão" >
+                                <option value=" Ribeirão da Ilha[1]" >
+                                <option value=" Santo Antônio" >
+                                <option value=" Sambaqui" >
+                                <option value=" Ingleses Sul" >
+                                <option value=" Bom Abrigo" >
+                                <option value=" Jurere Oeste" >
+                                <option value=" Porto da Lagoa" >
+                                <option value=" Cachoeira do Bom Jesus" >
+                                <option value=" Rio Tavares do Norte" >
+                                <option value=" Pedregal" >
+                                <option value=" Ratones" >
+                                <option value=" Canto da Lagoa" >
+                                <option value=" Retiro" >
+                                <option value=" Cacupé" >
+                                <option value=" Lagoa Pequena" >
+                                <option value=" Barra do Sambaqui" >
+                                <option value=" Caiacanga" >
+                                <option value=" Lagoinha do Norte" >
+                                <option value=" Base Aérea" >
+                                <option value=" Pedrita" >
+                                <option value=" Açores" >
+                                <option value=" Costeira do Ribeirão" >
+                                <option value=" Moenda" >
+                                <option value=" Tapera" >
+                                <option value=" Daniela" >
+                                <option value=" Vargem Pequena" >
+                                <option value=" Canto dos Araçás" >
+                                <option value=" Recanto dos Açores" >
+                                <option value=" Canto do Lamim" >
+                                <option value=" Vargem de Fora" >
+                                <option value=" Dunas da Lagoa" >
+                                <option value=" Autódromo" >
+                                <option value=" Forte" >
+                                <option value=" Ingleses Norte" >
+                                <option value=" Caieira" >
+                                <option value=" Praia Brava" >
+                                <option value=" Praia Mole" >                                
+                        </datalist>
+                    </div>
+                    <label for="censaude">Centro de saúde:</label>
+                    <div class="input">                 
+                        <input list="censaude" />
+                        <datalist id="censaude">
+                                <option value=" Cs Abraao" >
+                                <option value=" Cs Agronomica" >
+                                <option value=" Cs Alto Ribeirao" >
+                                <option value=" Cs Armacao" >
+                                <option value=" Cs Balneario" >
+                                <option value=" Cs Barra Da Lagoa" >
+                                <option value=" Cs Cachoeira Do Bom Jesus" >
+                                <option value=" Cs Caeira Da Barra Do Sul" >
+                                <option value=" Cs Campeche" >
+                                <option value=" Cs Canasvieiras" >
+                                <option value=" Cs Canto Da Lagoa" >
+                                <option value=" Cs Capoeiras" >
+                                <option value=" Cs Carianos" >
+                                <option value=" Cs Centro" >
+                                <option value=" Cs Coloninha" >
+                                <option value=" Cs Coqueiros" >
+                                <option value=" Cs Corrego Grande" >
+                                <option value=" Cs Costa Da Lagoa" >
+                                <option value=" Cs Costeira Do Pirajubae" >
+                                <option value=" Cs Estreito" >
+                                <option value=" Cs Fazenda Do Rio Tavares" >
+                                <option value=" Cs Ingleses" >
+                                <option value=" Cs Ingleses" >
+                                <option value=" Cs Itacorubi" >
+                                <option value=" Cs Jardim Atlantico" >
+                                <option value=" Cs Joao Paulo" >
+                                <option value=" Cs Jurere" >
+                                <option value=" Cs Lagoa Da Conceicao" >
+                                <option value=" Cs Monte Cristo" >
+                                <option value=" Cs Morro Das Pedras" >
+                                <option value=" Cs Novo Continente" >
+                                <option value=" Cs Novo Continente" >
+                                <option value=" Cs Pantanal" >
+                                <option value=" Cs Pantano Do Sul" >
+                                <option value=" Cs Ponta Das Canas" >
+                                <option value=" Cs Prainha" >
+                                <option value=" Cs Ratones" >
+                                <option value=" Cs Ribeirao Da Ilha" >
+                                <option value=" Cs Rio Tavares" >
+                                <option value=" Cs Rio Vermelho" >
+                                <option value=" Cs Rio Vermelho" >
+                                <option value=" Cs Saco Dos Limoes" >
+                                <option value=" Cs Saco Grande" >
+                                <option value=" Cs Santinho" >
+                                <option value=" Cs Santo Antonio De Lisboa" >
+                                <option value=" Cs Sape" >
+                                <option value=" Cs Tapera" >
+                                <option value=" Cs Trindade" >
+                                <option value=" Cs Vargem Grande" >
+                                <option value=" Cs Vargem Pequena" >
+                                <option value=" Cs Vila Aparecida" >
+                                
+                        </datalist>
+                    </div>
+                    <label for="tipoteste">Tipo de teste:</label>
+                    <div class="input">                 
+                        <input list="tipoteste" />
+                        <datalist id="tipoteste">
+                            <option value="BASALL - Basall">
+                            <option value="BASALL - Kit de teste COVID-19">
+                            <option value="ECO- Eco dignóstic">
+                            <option value="ECO DIAGNÓSTICA - COVID-19 IgG/IgM Combo ECO Teste">
+                            <option value="IMUNOCROMATOGRÁFICO DE FLUXO LATERAL RÁPIDO COVID1 - BASALL">
+                            <option value="IVD - Imuno-RÁPIDO COVID - 19 IgG/IgM">
+                            <option value="LMG - kit de teste covid19 basall">
+                            <option value="LMG LASERS - BASALL">   
+                            <option value="RT-PCR">
+                            <option value="TESTE RÁPIDO - ANTÍGENO">
+                            <option value="TESTE RÁPIDO - ANTICORPO">
+                            <option value="NÃO INFORMADO">                                       
+                        </datalist>
+                    </div>
+                    <label for="">Dor de garganta: </label>
+                    <div class="input"> 
+                        <input type="radio" id="dgsim" name="dorgarganta" value="sim" requi/>
+                        <label for="dgsim">Sim</label>
+                        <input type="radio" id="dgnao" name="dorgarganta" value="nao" requi/>
+                        <label for="dgnao">Não</label>
+                    </div>
+                    <label for="">Dispnéia: </label>
+                    <div class="input"> 
+                        <input type="radio" id="dsim" name="dispneia" value="sim" requi/>
+                        <label for="dsim">Sim</label>
+                        <input type="radio" id="dnao" name="dispneia" value="nao" requi/>
+                        <label for="dnao">Não</label>
+                    </div>
+                    <label for="">Febre: </label>
+                    <div class="input"> 
+                        <input type="radio" id="fsim" name="febre" value="sim" requi/>
+                        <label for="fsim">Sim</label>
+                        <input type="radio" id="fnao" name="febre" value="nao" requi/>
+                        <label for="fnao">Não</label>
+                    </div>
+                    
+                    <label for="">Tosse: </label>
+                    <div class="input"> 
+                        <input type="radio" id="tsim" name="tosse" value="sim" requi/>
+                        <label for="tsim">Sim</label>
+                        <input type="radio" id="tnao" name="tosse" value="nao" requi/>
+                        <label for="tnao">Não</label>
+                    </div>
+                    <label for="">UTI: </label>
+                    <div class="input"> 
+                        <input type="radio" id="usim" name="uti" value="sim" requi/>
+                        <label for="usim">Sim</label>
+                        <input type="radio" id="unao" name="uti" value="nao" requi/>
+                        <label for="unao">Não</label>
+                    </div>
+                                
+                    <button type="submit">Finalizar</button>
+                </form> 
+                </main>
+            </div>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <div class="nome">
+        &copy; 2021 - Cléber Paiva
+    </div>
+    <div class="footer_rede_social">
+        <a href="https://www.linkedin.com/in/cl%C3%A9ber-paiva-48988016a/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5548984361437&text=Ol%C3%A1%2C+meu+amigo%21&app_absent=0" target="_blank"> 
+             <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+        <a href="https://github.com/CleberPaiva" target="_blank">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+    </div>
+    <div class="nome">
+        &copy; 2021 - Marcos Michel Luciano 
+    </div>
+    <div class="footer_rede_social">
+        <a href="https://www.linkedin.com/in/marcosmichelluciano/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://bit.ly/2ShS136" target="_blank"> 
+             <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+        <a href="https://github.com/michelluciano" target="_blank">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+    </div>
+</footer>
+</html>
